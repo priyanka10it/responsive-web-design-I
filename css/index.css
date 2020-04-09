@@ -1,3 +1,574 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/*Webpage Design*/
+.container{
+	width:880px;
+	margin:0 auto;
+}
+
+/*navigation link*/
+.container header nav a {
+	margin: 10px 10px;
+	padding: 20px;
+	display: inline-block;
+	text-decoration: none;
+	margin-bottom: 20px;
+	  }
+
+/*Box for images in header section*/
+.box1{
+	background: white;
+  margin-left: 200px;
+  color: black;
+  font-style: italic;
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+  font-size: 50px;
+  display:block;
+  } 
+  
+    
+  .header{
+	display: inline-block;
+	margin-top: 70px;
+	
+}
+
+  /*round shaped image*/
+  .boximage{
+	  float: right;
+	  border-left: 10px;
+	  margin-top:-350px;
+  }
+
+  
+/*get started button*/
+.header .button{
+	 display: flex;
+	 justify-content: center;
+	 font-size: 20px;
+	 font-style: normal;
+	 border: 5px solid black;
+	 border-width: 1px;
+	 text-align: center;
+	 background-color: white;
+  width: 170px;
+  padding: 10px;
+  margin-left: 200px;
+  
+	 
+}
+
+/*Features*/
+.container{
+	display: flex;
+	justify-content: space-between;
+	}
+
+.container .Features{
+	width:500px;
+    height: 200px;
+  background: white;
+  margin-top: 35px;
+  margin-bottom: -100px;
+  margin-left: 20px;
+}
 
 
+   /*About*/ 
+.container .About{
+	width: 500px;
+    height: 200px;
+  background: white;
+  margin-top: 35px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: -100px;
+}
+
+.container {
+	border-top:1px solid black;
+	padding: 20px 0;
+	width: 880px;
+	}
+
+/*middle image*/
+
+.img{
+	display: flex;
+	justify-content:center;
+}
+.img .middle-img{
+  width: 850px;
+  float: right;
+  border: 5px solid white;
+  margin-bottom: 20px;
+  margin-left:5px;
+  
+}
+
+.container1{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+    }
+    
+/*service*/
+.container1 .Services{
+  
+  	width: 280px;
+    height: 100px;
+  background: white;
+  margin-top: 35px;
+  margin-left: 40px;
+  
+}
+
+/*product*/
+.container1 .Product{
+	width: 280px;
+    height: 100px;
+  background: white;
+  margin-top: -105px;
+  margin-left: 350px;
+  margin-bottom: 20px;
+}
+
+/*vision*/
+.container1 .Vision{
+	width: 280px;
+    height: 100px;
+  background: white;
+  margin-top: -145px;
+  margin-left: 650px;
+ 
+}
+
+/*contact*/
+.box7{
+	width: 310px;
+	float:left;
+  border: 15px solid white;
+  margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 30px;
+   
+}
+
+.box7 h4{
+	border-top:1px solid black;
+	padding: 20px 0;
+	width: 880px;
+}
+
+/*footer*/
+.box8{
+	width: 290px;
+	float: left;;
+	margin-top: 250px;
+   margin-bottom: 20px;
+   margin-right: 250px;
+}
+
+
+
+/*Tablet View*/
+@media screen and (max-width:800px){
+       .logo{
+        float: left;
+        margin-top:-150px;
+        margin-left:220px;
+    }
+
+  .container header nav a{
+    float:left;
+    margin-top:150px;
+	padding:15px;
+	text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+          
+  .box1{
+	background: white;
+  margin: 20px;
+  color: black;
+  font-style: italic;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 70px;
+  display:block;
+  padding-left: 120px;
+  } 
+  
+  
+.header .button{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-style: normal;
+    border: 5px solid black;
+    border-width: 1px;
+    text-align: center;
+    background-color: white;
+    width: 170px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 190px;
+    
+}
+.boximage{
+    visibility: hidden;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+	}
+
+.container .Features{
+	width: 400px;
+    height: 200px;
+  background: white;
+  margin-top: 35px;
+  margin-bottom: -100px;
+  margin-left: 50px;
+  margin-right: 20px;
+  
+}
+
+
+   /*About*/ 
+.container .About{
+    width: 400px;
+    height: 150px;
+  background: white;
+  margin-top: 35px;
+  margin-left: .25px;
+  margin-bottom: -100px;
+  margin-right: -5px;
+}
+
+.container {
+	border-top:2px solid black;
+	padding: 20px 0;
+	width: 700px;
+    }
+    
+    .img .middle-img{
+        width: 700px;
+        float: right;
+      border: 5px solid white;
+       margin-bottom: 20px;
+      margin-left:50px;
+     
+    }
+
+    /*service*/
+.container1 .Services{
+	width: 200px;
+    height: 100px;
+  background: white;
+  margin-top: 35px;
+  margin-left: 90px;
+  
+}
+
+/*product*/
+.container1 .Product{
+	width: 200px;
+    height: 100px;
+  background: white;
+  margin-top: -105px;
+  margin-left: 350px;
+  margin-bottom: 20px;
+}
+
+/*vision*/
+.container1 .Vision{
+	width: 200px;
+    height: 100px;
+  background: white;
+  margin-top: -145px;
+  margin-left: 575px;
+ 
+margin-right: 50px;
+}
+
+.container1{
+  padding-bottom: 10px;
+}
+
+/*contact*/
+.box7{
+  width: 310px;
+	float:left;
+  border: 15px solid white;
+  margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 80px;  
+}
+
+.box7 h4{
+  border-top:2px solid black;
+  padding-top: 80px 0;
+	width: 700px;
+}
+
+/*footer*/
+.box8{
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-left: 250px;
+   margin-right: 250px;
+}
+}
+
+/*Mobile View*/
+@media screen and (max-width:500px){
+  .logo{
+    display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: -30px;
+        margin-bottom:  2px;
+        margin-left: 180px;
+        justify-content: center;
+        position: absolute;  
+        width: 40%;
+        
+          }
+                  
+      .logo{
+      border-bottom: 1px solid black;
+             }   
+  
+    .container header nav a {
+    display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding:5px;
+        margin-top: 20px;
+        margin-bottom: 2px;
+        margin-left: 30px;
+        text-align: center;
+          }
+
+  .container header nav a{
+    border-bottom: 1px solid black;
+    }
+
+    .box1{
+      background: white;
+      margin: 10px;
+      color: black;
+      font-style: italic;
+      text-align: center;
+      padding-top: 10px;
+      box-sizing: border-box;
+      font-size: 70px;
+      display:block;
+      padding-left: 100px;
+      } 
+      
+      
+    .header .button{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-style: normal;
+        border: 5px solid black;
+        border-width: 1px;
+        text-align: center;
+        background-color: white;
+        width: 170px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 150px;
+        
+    }
+    .boximage{
+        visibility: hidden;
+    }
+  
+    .container{
+      display: flex;
+      flex-direction: column;
+      }
+    
+      /*Features*/
+    .container .Features{
+      width: 450px;
+      height: 200px;
+    background: white;
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-bottom: -100px;
+    margin-right: -5px;
+    }
+    
+    
+       /*About*/ 
+   .container .About{
+        width: 450px;
+        height: 200px;
+      background: white;
+      margin-top: 35px;
+      margin-left: 10px;
+      margin-bottom: -100px;
+      margin-right: -5px;
+   }
+    
+    .container {
+      border-top:2px solid black;
+      padding: 20px 0;
+      width: 450px;
+      margin-left: 60px;
+      margin-right: 50px;
+        }
+        
+        .img .middle-img{
+            width: 500px;
+            float: right;
+          border: 5px solid white;
+           margin-bottom: 20px;
+          margin-left:180px;
+          margin-right: 50px;
+         
+        }
+
+        .container1{
+          display: flex;
+          flex-direction: column;
+          
+            }
+            
+        /*service*/
+        .container1 .Services{
+          
+            width: 450px;
+            height: 200px;
+          background: white;
+          margin-top: 35px;
+          margin-left: 80px;
+          margin-bottom: 50px;
+        }
+        
+        /*product*/
+        .container1 .Product{
+          width: 450px;
+            height: 200px;
+          background: white;
+          margin-top: -105px;
+          margin-left: 80px;
+          margin-bottom: 50px;
+        }
+        
+        /*vision*/
+        .container1 .Vision{
+          width: 450px;
+            height: 200px;
+          background: white;
+          margin-top: -105px;
+          margin-left: 80px;
+          margin-bottom: 10px;
+          
+          }
+
+         .container1{
+            padding-bottom:5px;
+          }
+        
+        /*contact*/
+        .box7{
+          width: 310px;
+          float:left;
+          border: 5px solid white;
+          margin-top: 10px;
+           margin-bottom: 10px;
+           margin-left: 80px;
+           
+        }
+        
+        .box7 h4{
+          border-top:2px solid black;
+          padding: 20px 0;
+          width: 450px;
+        }
+        
+        /*footer*/
+        .box8{
+          width: 290px;
+          float: left;;
+          margin-top: 100px;
+           margin-bottom: 20px;
+           margin-left:150px;
+        }
+}
